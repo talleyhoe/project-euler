@@ -1,12 +1,12 @@
 ## P.1: Multiples of 3 or 5
-*** Problem Statement ***
+***Problem Statement***
 
 If we list all the natural numbers below 10 that are multiples 
 of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
 Find the sum of all the multiples of 3 or 5 below 1000.
 
-*** Algorithm ***
+***Algorithm***
 
 Multiples of a specific modulus span the number line in a discrete,
 linear fashion, proportional to modulus size. 
@@ -34,7 +34,7 @@ This is a good method when your range is small and you're given many
 multiples.
 
 
-*** Additonal Optimizations ***
+***Additonal Optimizations***
 
 Since multiplicity spans the number line in a linear fashion, each 
 multiple of a given modulus must be exactly a modulo more from the
