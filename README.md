@@ -1,6 +1,8 @@
 # project-euler
 Completed programs for project euler
 
+[GithubDocs Math](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
+
 Me testing if github renders math: $( f(x) = 3x \over 2y $)
 
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
