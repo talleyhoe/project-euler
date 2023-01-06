@@ -3,13 +3,6 @@
 import math
 import sys
 
-def prime_density(ubound: int) -> float:
-    """
-    input: ubound - the upper bound of the number line to sieve through
-    output: density - estimated number of primes below ubound
-    """
-    return ( ubound / math.log(ubound) )
-
 def sieve_erathosthenes(ubound: int, primes: list[int] = None) -> list[int]:
     if (ubound < 1):
         print(f"Invalid range. Need upper bound > 1 (ubound:= {ubound})",
