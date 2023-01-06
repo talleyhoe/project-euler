@@ -31,7 +31,7 @@ def prime_density_derivative(ubound: int) -> float:
     bottom = ( math.log(ubound) )**2
     return (top / bottom)
 
-def eulers_method(func_value, func_derivative, 
+def newtons_method(func_value, func_derivative, 
                   tolerance=20, guess=5, max_steps=200):
     point = guess
     value = func_value(point)
@@ -49,7 +49,7 @@ def main():
     ubound_stride: int = ( 1 << 10)
 
     root_func = lambda n: prime_density(n) - max_prime_cnt
-    ubound: int = int( eulers_method(root_func, prime_density_derivative) )
+    ubound: int = int( newtons_method(root_func, prime_density_derivative) )
     print(f"first prime pass. ubound: {ubound:,}")
     primes: list[int] = sieve_erathosthenes(ubound)
     prime_cnt: int = len(primes)
