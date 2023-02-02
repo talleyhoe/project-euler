@@ -25,7 +25,7 @@ def sieve_erathosthenes(ubound: int) -> list[int]:
             primes.append(prime)
     return primes
 
-def prime_decompositon(num: int, primes: list[int]) -> PrimeCnt:
+def prime_decomposition(num: int, primes: list[int]) -> PrimeCnt:
     prime_cnt: PrimeCnt = {}
     for p in primes:
         prime_cnt[p] = 0
@@ -67,7 +67,7 @@ def main():
     primes: list[int] = sieve_erathosthenes(ubound)
     prime_cnt: PrimeCnt = init_prime_count(primes)
     for i in range(1, ubound + 1):
-        num_decomp: PrimeCnt = prime_decompositon(i, primes)
+        num_decomp: PrimeCnt = prime_decomposition(i, primes)
         prime_cnt = update_prime_count(prime_cnt, num_decomp)
     least_multiple = gen_least_multiple(prime_cnt)
     print(f"Least multiple below {ubound:,}: {least_multiple:,}")
