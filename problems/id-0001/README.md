@@ -24,10 +24,10 @@ multiplicity.
 ```c
 sum = 0
 for (i = 0; i < ubound; ++i) {
-	for m in multiples {
-		if (i % m == 0) {
-			sum += i
-}}} return sum
+    for m in multiples {
+        if (i % m == 0) {
+            sum += i;
+}}} return sum;
 ```
 
 This is a good method when your range is small and you're given many
