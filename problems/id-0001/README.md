@@ -21,13 +21,13 @@ ubound. Once inside the loop you then check in sequence if the
 element is a multiple of any provided multiple. Stop once you find any
 multiplicity. 
 
-```
+```c
 sum = 0
 for (i = 0; i < ubound; ++i) {
-	for m in multiples {
-		if (i % m == 0) {
-			sum += i
-}}} return sum
+    for m in multiples {
+        if (i % m == 0) {
+            sum += i;
+}}} return sum;
 ```
 
 This is a good method when your range is small and you're given many
@@ -40,6 +40,6 @@ Since multiplicity spans the number line in a linear fashion, each
 multiple of a given modulus must be exactly a modulo more from the
 prior multiple. So we can sum all multiples of each modulus, then 
 sum the common multiplicities of the modulo and subtract. This is 
-just the probabilistic expansion of each modulos multiple set.
+just the probabilistic expansion of each modulus' multiple set.
 
 This method would work well for very few multiples and large ranges.
